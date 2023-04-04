@@ -29,7 +29,7 @@ Vue.use(DigitalFlop)
 
 <body>
     <div id="app">
-        <e-digital-flop :value="999"></e-digital-flop>
+        <e-digital-flop :value="9999" separator=","></e-digital-flop>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -55,7 +55,7 @@ Vue.use(DigitalFlop)
 // App.vue
 <template>
   <div id="app">
-    <e-digital-flop :value="value" :decimals="2" />
+    <e-digital-flop :value="value" :decimals="2" separator="," />
   </div>
 </template>
 
@@ -64,7 +64,7 @@ export default {
   name: 'App',
   data() {
     return {
-      value: 999
+      value: 9999
     }
   }
 }
@@ -83,6 +83,7 @@ duration|Number|持续时间，默认3000毫秒
 fontSize|Number|字体大小，默认50
 fontFamily|String|字体，默认液晶字体，传空值则恢复正常浏览器字体
 color|String|颜色，默认#000
+separator|String|千位分隔符，默认''
 
 
 #### 全屏组件

@@ -57,6 +57,14 @@ export default {
             type: String,
             required: false,
             default: '#000'
+        },
+        /**
+         * @description 千位分隔符
+         */
+        separator: {
+            type: String,
+            required: false,
+            default: ''
         }
     },
     data() {
@@ -95,7 +103,7 @@ export default {
     mounted() {
         this.start();
     },
-    
+
     methods: {
         start() {
             animation(this.duration, this.startVal, this.value, (value) => {
@@ -107,7 +115,22 @@ export default {
          * @param {*} val 
          */
         formatVal(val) {
-            return val.toFixed(this.decimals);
+            const num = val.toFixed(this.decimals);
+            const numStr = String(num);
+            const x = numStr.split('.');
+            // 整数部分
+            let x1 = x[0];
+            // 小数点部分
+            const x2 = x.length > 1 ? `.${x[1]}` : '';
+            // 数字后面是三位数字
+            const rgx = /(\d+)(\d{3})/;
+            // 有分隔符并且非数字
+            if (this.separator && typeof this.separator !== 'number') {
+                while (rgx.test(x1)) {
+                    x1 = x1.replace(rgx, '$1' + this.separator + '$2');
+                }
+            }
+            return `${x1}${x2}`;
         }
     }
 }

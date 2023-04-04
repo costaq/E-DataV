@@ -1,6 +1,6 @@
 {
   "name": "e-datav",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "vue2 大屏组件",
   "author": "costaxu",
   "main": "lib/index.js",
@@ -16,7 +16,7 @@
     "vue",
     "chart",
     "datav",
-    "easy-data"
+    "e-datav"
   ],
   "repository": {
     "type": "git",
