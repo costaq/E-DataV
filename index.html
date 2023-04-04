@@ -1,0 +1,34 @@
+<!--
+ * @Autor: costa
+ * @Date: 2023-03-24 10:08:12
+ * @LastEditors: costa
+ * @LastEditTime: 2023-04-04 10:28:30
+ * @Description: umd 测试页面
+ * @Copyright: © 2023 by costa. All rights reserved.
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <div id="app">
+        <e-full-screen-container>
+            <e-digital-flop :value="999"></e-digital-flop>
+        </e-full-screen-container>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="./dist/e-datav.min.vue.js"></script>
+<!-- <script src="https://unpkg.com/e-datav/dist/e-datav.min.vue.js"></script> -->
+<script>
+    new Vue({
+        el: '#app'
+    })
+</script>
+
+</html>
