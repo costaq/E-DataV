@@ -1,6 +1,6 @@
 {
   "name": "e-datav",
-  "version": "0.2.0",
+  "version": "0.2.7",
   "description": "vue2 大屏组件",
   "author": "costaxu",
   "main": "lib/index.js",
@@ -37,15 +37,16 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-vue": "5.1.9",
+    "vue-styled-components": "^1.6.0",
     "vue-template-compiler": "^2.7.14"
   },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.1.0",
     "cssnano": "^5.1.15",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-serve": "^2.0.2",
-    "rollup-plugin-terser": "^7.0.2",
-    "sass": "^1.60.0"
+    "rollup-plugin-terser": "^7.0.2"
   },
   "browserslist": [
     "defaults",

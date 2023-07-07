@@ -2,7 +2,7 @@
  * @Autor: costa
  * @Date: 2023-03-28 16:21:57
  * @LastEditors: costa
- * @LastEditTime: 2023-04-03 15:59:44
+ * @LastEditTime: 2023-07-07 16:59:56
  * @Description: 
  * @Copyright: © 2023 by costa. All rights reserved.
  */
@@ -155,11 +155,12 @@ async function addComponentsExport() {
     const components = [];
 
     await dirForEach(dir, src => {
-        components.push(src.split('/').slice(-1)[0]);
+        const component = src.split('/').slice(-1)[0];
+        if (component !== 'styled')
+            components.push(component);
     });
-
     const importString = components.reduce((all, cur) => {
-        return all + '\n' + `export { default as ${toUpperFirstWord(cur)} } from '.${COMPONENTS_DIR}/${cur}';`
+        return all + '\n' + `export { default as E${toUpperFirstWord(cur)} } from '.${COMPONENTS_DIR}/${cur}';`
     }, '') + '\n';
 
     const targetFile = `${COMPILE_SRC}${ENTRANCE}`;
@@ -175,7 +176,12 @@ async function addComponentsExport() {
  * @description 首字母大写
  */
 function toUpperFirstWord(str) {
-    return `${str.slice(0, 1).toUpperCase()}${str.slice(1)}`
+    let arr = str.split("-");
+    let newArr = arr.map((ele, idx) => {
+        return idx === 0 ? ele : ele[0].toUpperCase() + ele.slice(1);
+    })
+    str = newArr.join("");
+    return `${str.slice(0, 1).toUpperCase()}${str.slice(1)}`;
 }
 
 start();

@@ -1,9 +1,14 @@
 <template>
   <div id="app">
     <e-full-screen-container>
-      <e-digital-flop :value="value" :decimals="0"></e-digital-flop>
-      <div style="margin-top:20px;">
-        <input type="number" v-model="txtValue" /> <input type="button" value="更新数据" @click="handleUpdate" />
+      <div style="width: 400px;height:400px;">
+        <e-border-box-1>
+          <e-digital-flop :value="value" :decimals="0"></e-digital-flop>
+        </e-border-box-1>
+
+        <div style="margin-top:20px;">
+          <input type="number" v-model="txtValue" /> <input type="button" value="更新数据" @click="handleUpdate" />
+        </div>
       </div>
     </e-full-screen-container>
   </div>

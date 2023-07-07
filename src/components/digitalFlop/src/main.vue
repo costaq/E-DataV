@@ -1,3 +1,11 @@
+<!--
+ * @Autor: costa
+ * @Date: 2023-04-04 11:03:48
+ * @LastEditors: costa
+ * @LastEditTime: 2023-07-07 15:51:29
+ * @Description: 
+ * @Copyright: © 2023 by costa. All rights reserved.
+-->
 <template>
     <span :style="styles">{{ displayVal }}</span>
 </template>
@@ -6,6 +14,8 @@ import { animation } from '../../../utils/animation';
 
 export default {
     name: 'EDigitalFlop',
+    components: {
+    },
     props: {
         /**
          * @description 终止值

@@ -2,7 +2,7 @@
  * @Autor: costa
  * @Date: 2023-03-28 16:40:07
  * @LastEditors: costa
- * @LastEditTime: 2023-04-03 17:33:35
+ * @LastEditTime: 2023-07-07 14:56:04
  * @Description: rollup编译
  * @Copyright: © 2023 by costa. All rights reserved.
  */
@@ -15,6 +15,7 @@ import cssnano from 'cssnano';
 import vue from 'rollup-plugin-vue';
 import serve from 'rollup-plugin-serve';
 import livereload from 'rollup-plugin-livereload';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
 
 export default {
     input: './build/entry.js',
@@ -24,6 +25,7 @@ export default {
         name: 'eDataV'
     }],
     plugins: [
+        nodeResolve(),
         babel({
             exclude: 'node_modules/**'
         }),
