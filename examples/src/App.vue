@@ -4,8 +4,9 @@
       <div style="width: 400px;height:400px;">
         <e-border-box-1>
           <e-digital-flop :value="value" :decimals="0"></e-digital-flop>
+          <e-water-level-pond :width="200" :height="200" :value="value" :background-color="'#000'" />
         </e-border-box-1>
-
+        
         <div style="margin-top:20px;">
           <input type="number" v-model="txtValue" /> <input type="button" value="更新数据" @click="handleUpdate" />
         </div>
