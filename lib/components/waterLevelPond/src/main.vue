@@ -1,5 +1,6 @@
 <template>
-    <div class="e-water-level-pond">
+    <box-container class="e-water-level-pond" :fontSize="fontSize" :fontColor="fontColor"
+        :backgroundColor="backgroundColor">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="display: none;">
             <symbol :id="uniqueId">
                 <path
@@ -16,48 +17,32 @@
                 </path>
             </symbol>
         </svg>
-        <box-container :height="height" :width="width" :fontSize="fontSize" :fontColor="fontColor"
-            :backgroundColor="backgroundColor" :waveColors="waveColors">
-            <div class="percent">
-                <div class="value">{{displayVal}}</div>
-                <div class="suffix">%</div>
-            </div>
-            <div ref="waterDom" class="water">
-                <svg viewBox="0 0 560 20" class="water_wave water_wave_back">
-                    <use :href="`#${uniqueId}`"></use>
-                </svg>
-                <svg viewBox="0 0 560 20" class="water_wave water_wave_front">
-                    <use :href="`#${uniqueId}`"></use>
-                </svg>
-            </div>
-        </box-container>
-    </div>
+        <div class="percent">
+            <div class="value">{{ displayVal }}</div>
+            <div class="suffix">%</div>
+        </div>
+        <water-wave :value="displayVal" :waveColors="waveColors">
+            <svg viewBox="0 0 560 20" class="water_wave water_wave_back">
+                <use :href="`#${uniqueId}`"></use>
+            </svg>
+            <svg viewBox="0 0 560 20" class="water_wave water_wave_front">
+                <use :href="`#${uniqueId}`"></use>
+            </svg>
+        </water-wave>
+    </box-container>
 </template>
 <script>
-import { BoxContainer } from './boxContainer';
+import { BoxContainer, WaterWave } from './boxContainer';
 import { genNonDuplicateID } from '../../../utils/common';
 import { animation } from '../../../utils/animation';
 
 export default {
     name: 'EWaterLevelPond',
     components: {
-        BoxContainer
+        BoxContainer,
+        WaterWave
     },
     props: {
-        /**
-     * @description 宽度，若不传值，则为100%
-     */
-        width: {
-            type: Number,
-            required: false
-        },
-        /**
-         * @description 高度，若不传值，则为100%
-         */
-        height: {
-            type: Number,
-            required: false
-        },
         /**
          * @description 当前值
          */
@@ -142,14 +127,12 @@ export default {
     mounted() {
         this.start();
     },
-    methods: {  
+    methods: {
         start() {
             animation(this.duration, this.startVal, this.value, (value) => {
-                // 通过tranalate改变定位
-                this.$refs["waterDom"].style.transform = `translate(0, ${100 - value}%)`;
                 this.displayVal = +value.toFixed(this.decimals);
             });
         }
-    } 
+    }
 }
 </script>

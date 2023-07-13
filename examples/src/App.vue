@@ -4,7 +4,7 @@
       <div style="width: 400px;height:400px;">
         <e-border-box-1>
           <e-digital-flop :value="value" :decimals="0"></e-digital-flop>
-          <e-water-level-pond :width="200" :height="200" :value="value" :background-color="'#000'" />
+          <e-water-level-pond style="width:300px;height:300px;" :value="value" :background-color="'#000'" />
         </e-border-box-1>
         
         <div style="margin-top:20px;">

@@ -97,7 +97,8 @@ Vue.use(EWaterLevelPond)
 // App.vue
 <template>
   <div id="app">
-    <e-water-level-pond :width="200" :height="200" :value="56" :background-color="'#000'" />
+    <!-- 若不通过样式设置宽高，则根据父元素100%拉伸 -->
+    <e-water-level-pond style="width:200px;height:200px;" :value="56" :background-color="'#000'" />
   </div>
 </template>
 
@@ -109,9 +110,7 @@ Vue.use(EWaterLevelPond)
 ##### 可选参数
 字段|类型|备注
 -|-|-
-value|Number|数值，必填
-height|Number|高度，默认为100%，根据父元素拉伸
-width|Number|宽度，默认为100%，根据父元素拉伸
+value|Number|数值，必填项，必须传递0~100之间的值
 decimals|Number|小数点，默认0
 duration|Number|数字变动时动画持续时间，默认3000毫秒
 fontSize|Number|字体大小，默认36
