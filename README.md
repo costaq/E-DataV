@@ -1,4 +1,9 @@
-## 什么是E-DataV?
+## E-DataV
+<a href="https://www.npmjs.com/package/e-datav">
+    <img src="https://img.shields.io/npm/v/e-datav.svg" alt="LICENSE" />
+</a>
+
+### 什么是E-DataV?
 
 * E-DataV是一个基于**Vue2**的数据可视化组件库（[Vue2版本](https://github.com/costaq/E-DataV)及[React版本](https://github.com/costaq/E-DataV-React)）
 * 提供数据可视化大屏所需的各种组件，朋友写的[DataV](https://github.com/DataV-Team/DataV)组件库中已有的组件，我这边不会过多增加，最多是效果提升

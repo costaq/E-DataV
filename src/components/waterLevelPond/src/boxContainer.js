@@ -1,6 +1,6 @@
 import styled from "vue-styled-components";
 
-const boxContainerProps = {
+const boxContentProps = {
     fontSize: { type: Number },
     fontColor: { type: String },
     backgroundColor: { type: String }
@@ -11,14 +11,18 @@ const waterWaveProps = {
     waveColors: { type: Array }
 }
 
-export const BoxContainer = styled('div', boxContainerProps)`
+export const BoxContainer = styled.div`
+    position: relative;
+    width: 100%;
+    height: 100%;
+`;
+
+export const BoxContent = styled('div', boxContentProps)`
     height: 100%;
     width: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    top: 0px;
+    left: 0px;
     background: ${props => props.backgroundColor};
     border-radius: 100%;
     overflow: hidden;
