@@ -2,7 +2,7 @@
  * @Autor: costa
  * @Date: 2023-03-24 10:08:12
  * @LastEditors: costa
- * @LastEditTime: 2023-07-17 14:24:40
+ * @LastEditTime: 2023-07-18 17:15:01
  * @Description: umd 测试页面
  * @Copyright: © 2023 by costa. All rights reserved.
 -->
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div id="app">
+    <div id="app" style="background-color: #000;">
         <e-full-screen-container>
             <div style="width:200px;height:200px;margin-left:200px;">
                 <e-border-box-1 style="padding: 10px;">
@@ -26,6 +26,9 @@
             </div>
             <div style="width:300px;height:300px;">
                 <e-water-level-pond :value="78" />
+            </div>
+            <div style="width:500px;height:100px;">
+                <e-tab :items="[{label: '222', value: '222'}, {label: '333', value: '333'}]" :columns="3"></e-tab>
             </div>
         </e-full-screen-container>
     </div>
