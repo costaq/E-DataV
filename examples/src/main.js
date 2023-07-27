@@ -8,13 +8,14 @@
  */
 import Vue from 'vue'
 import App from './App.vue'
-import { EDigitalFlop, EFullScreenContainer, EBorderBox1, EWaterLevelPond, ETab } from 'e-datav';
+import { EDigitalFlop, EFullScreenContainer, EBorderBox1, EBorderBox2, EWaterLevelPond, ETab } from 'e-datav';
 // import EDataV from 'e-datav';
 
 Vue.config.productionTip = false
 
 Vue.use(ETab);
 Vue.use(EBorderBox1);
+Vue.use(EBorderBox2);
 Vue.use(EDigitalFlop);
 Vue.use(EFullScreenContainer);
 Vue.use(EWaterLevelPond);

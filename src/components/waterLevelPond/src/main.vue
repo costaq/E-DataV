@@ -1,5 +1,5 @@
 <template>
-    <box-container class="water-level-pond">
+    <global-box class="water-level-pond">
         <box-content class="e-water-level-pond" :fontSize="fontSize" :fontColor="fontColor"
             :backgroundColor="backgroundColor">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="display: none;">
@@ -31,17 +31,18 @@
                 </svg>
             </water-wave>
         </box-content>
-    </box-container>
+    </global-box>
 </template>
 <script>
-import { BoxContainer, WaterWave, BoxContent } from './boxContainer';
+import { WaterWave, BoxContent } from './boxContainer';
+import { GlobalBox } from '../../styled/GlobalBox';
 import { genNonDuplicateID } from '../../../utils/common';
 import { animation } from '../../../utils/animation';
 
 export default {
     name: 'EWaterLevelPond',
     components: {
-        BoxContainer,
+        GlobalBox,
         WaterWave,
         BoxContent
     },

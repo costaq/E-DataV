@@ -91,6 +91,8 @@ color|String|颜色，默认#000
 separator|String|千位分隔符，默认''
 
 
+---
+
 #### 水位图
 
 ```js
@@ -123,6 +125,7 @@ fontColor|String|颜色，默认#000
 backgroundColor|String|背景色颜色，默认transparent透明
 waveColors|String[]|水波颜色，默认['#41a9e3', '#b0e0ff']，第一个参数为前波浪，后一个参数为后波浪
 
+---
 
 #### Tab组件
 
@@ -191,7 +194,7 @@ value|Number或String|值，必须是数字或字符串
 -|-|-
 change|值变化时触发的事件|选中的item值
 
-
+---
 
 #### 全屏组件
 
@@ -221,6 +224,7 @@ type|String|数值，默认'full', 其他可选类型：full（全屏拉伸） f
 width|Number|大屏设计稿宽度，也就是公司设计师出的效果图尺寸，默认1920
 height|Number|大屏设计稿高度，默认1080
 
+---
 
 #### 边框组件
 
@@ -234,9 +238,9 @@ Vue.use(EBorderBox1)
 
 // App.vue
 <template>
-    <div style="width:200px;height:200px;">
-        <e-border-box-1>
-            <e-digital-flop />
+    <div>
+        <!-- 若不通过样式设置宽高，则根据父元素100%拉伸 -->
+        <e-border-box-1 style="width:200px;height:200px;">
         </e-border-box-1>
     </div>
 </template>
@@ -254,3 +258,36 @@ borderRadius|Number|边框圆角，默认值3
 borderWidth|Number|边框宽度，默认值3
 colors|String[]|渐变颜色，默认值['#5ddcff', '#4e00c2']，只接受2个值
 duration|Number|动画持续时间，默认值4，单位秒
+
+---
+
+边框组件1
+
+```js
+
+// main.js
+import { EBorderBox2 } from 'e-datav'
+Vue.use(EBorderBox2)
+
+// App.vue
+<template>
+    <div>
+        <!-- 若不通过样式设置宽高，则根据父元素100%拉伸 -->
+        <e-border-box-2 style="width:200px;height:200px;">
+        </e-border-box-2>
+    </div>
+</template>
+
+```
+
+##### 效果演示
+
+<img src="./images/border-box-2.png">
+
+##### 可选参数
+字段|类型|备注
+-|-|-
+borderColor|String|边框颜色，默认值#4cc7f3
+borderWidth|Number|边框宽度，默认值2
+lineWidth|Number|边框线长度，默认值10
+backgroundColor|String|背景色，默认值rgba(76, 199, 243, 0.15)

@@ -8,12 +8,16 @@
           <div style="width:600px;height:100px;">
             <e-tab :value="'2'" :items="items" :columns="3" @change="handleChange"></e-tab>
           </div>
+          <e-border-box-2 style="width:300px;height:300px;">
+          </e-border-box-2>
         </e-border-box-1>
 
         <div style="margin-top:20px;">
           <input type="number" v-model="txtValue" /> <input type="button" value="更新数据" @click="handleUpdate" />
         </div>
+        <div>
 
+        </div>
       </div>
     </e-full-screen-container>
   </div>

@@ -40,7 +40,7 @@
     };
 
     //
-    var script$4 = {
+    var script$5 = {
       name: 'EDigitalFlop',
       components: {},
       props: {
@@ -249,26 +249,26 @@
     }
 
     /* script */
-    const __vue_script__$4 = script$4;
+    const __vue_script__$5 = script$5;
 
     /* template */
-    var __vue_render__$4 = function () {
+    var __vue_render__$5 = function () {
       var _vm = this;
       var _h = _vm.$createElement;
       var _c = _vm._self._c || _h;
       return _c("span", { style: _vm.styles }, [_vm._v(_vm._s(_vm.displayVal))])
     };
-    var __vue_staticRenderFns__$4 = [];
-    __vue_render__$4._withStripped = true;
+    var __vue_staticRenderFns__$5 = [];
+    __vue_render__$5._withStripped = true;
 
       /* style */
-      const __vue_inject_styles__$4 = undefined;
+      const __vue_inject_styles__$5 = undefined;
       /* scoped */
-      const __vue_scope_id__$4 = undefined;
+      const __vue_scope_id__$5 = undefined;
       /* module identifier */
-      const __vue_module_identifier__$4 = undefined;
+      const __vue_module_identifier__$5 = undefined;
       /* functional template */
-      const __vue_is_functional_template__$4 = false;
+      const __vue_is_functional_template__$5 = false;
       /* style inject */
       
       /* style inject SSR */
@@ -277,13 +277,13 @@
       
 
       
-      const __vue_component__$4 = /*#__PURE__*/normalizeComponent(
-        { render: __vue_render__$4, staticRenderFns: __vue_staticRenderFns__$4 },
-        __vue_inject_styles__$4,
-        __vue_script__$4,
-        __vue_scope_id__$4,
-        __vue_is_functional_template__$4,
-        __vue_module_identifier__$4,
+      const __vue_component__$5 = /*#__PURE__*/normalizeComponent(
+        { render: __vue_render__$5, staticRenderFns: __vue_staticRenderFns__$5 },
+        __vue_inject_styles__$5,
+        __vue_script__$5,
+        __vue_scope_id__$5,
+        __vue_is_functional_template__$5,
+        __vue_module_identifier__$5,
         false,
         undefined,
         undefined,
@@ -291,7 +291,7 @@
       );
 
     function EDigitalFlop (Vue) {
-      Vue.component(__vue_component__$4.name, __vue_component__$4);
+      Vue.component(__vue_component__$5.name, __vue_component__$5);
     }
 
     //
@@ -300,7 +300,7 @@
     //
     //
 
-    var script$3 = {
+    var script$4 = {
       name: 'EFullScreenContainer',
       props: {
         type: {
@@ -378,26 +378,26 @@
     };
 
     /* script */
-    const __vue_script__$3 = script$3;
+    const __vue_script__$4 = script$4;
 
     /* template */
-    var __vue_render__$3 = function () {
+    var __vue_render__$4 = function () {
       var _vm = this;
       var _h = _vm.$createElement;
       var _c = _vm._self._c || _h;
       return _c("div", { staticClass: "full-container" }, [_vm._t("default")], 2)
     };
-    var __vue_staticRenderFns__$3 = [];
-    __vue_render__$3._withStripped = true;
+    var __vue_staticRenderFns__$4 = [];
+    __vue_render__$4._withStripped = true;
 
       /* style */
-      const __vue_inject_styles__$3 = undefined;
+      const __vue_inject_styles__$4 = undefined;
       /* scoped */
-      const __vue_scope_id__$3 = undefined;
+      const __vue_scope_id__$4 = undefined;
       /* module identifier */
-      const __vue_module_identifier__$3 = undefined;
+      const __vue_module_identifier__$4 = undefined;
       /* functional template */
-      const __vue_is_functional_template__$3 = false;
+      const __vue_is_functional_template__$4 = false;
       /* style inject */
       
       /* style inject SSR */
@@ -406,13 +406,13 @@
       
 
       
-      const __vue_component__$3 = /*#__PURE__*/normalizeComponent(
-        { render: __vue_render__$3, staticRenderFns: __vue_staticRenderFns__$3 },
-        __vue_inject_styles__$3,
-        __vue_script__$3,
-        __vue_scope_id__$3,
-        __vue_is_functional_template__$3,
-        __vue_module_identifier__$3,
+      const __vue_component__$4 = /*#__PURE__*/normalizeComponent(
+        { render: __vue_render__$4, staticRenderFns: __vue_staticRenderFns__$4 },
+        __vue_inject_styles__$4,
+        __vue_script__$4,
+        __vue_scope_id__$4,
+        __vue_is_functional_template__$4,
+        __vue_module_identifier__$4,
         false,
         undefined,
         undefined,
@@ -420,7 +420,7 @@
       );
 
     function EFullScreenContainer (Vue) {
-      Vue.component(__vue_component__$3.name, __vue_component__$3);
+      Vue.component(__vue_component__$4.name, __vue_component__$4);
     }
 
     /*
@@ -3568,12 +3568,12 @@
 
     var styled = _styled(_styledComponent(_componentStyle(generateAlphabeticName)));
 
-    var _templateObject$3, _templateObject2$2, _templateObject3$2, _templateObject4;
-    var position = css(_templateObject$3 || (_templateObject$3 = _taggedTemplateLiteral(["\n    position: relative;\n    width: 100%;\n    height: 100%;\n"])));
+    var _templateObject$5, _templateObject2$2, _templateObject3$1, _templateObject4;
+    var position = css(_templateObject$5 || (_templateObject$5 = _taggedTemplateLiteral(["\n    position: relative;\n    width: 100%;\n    height: 100%;\n"])));
     var BorderContent = styled.div(_templateObject2$2 || (_templateObject2$2 = _taggedTemplateLiteral(["\n    ", "\n"])), function () {
       return position;
     });
-    var BorderSvgContainer = styled.svg(_templateObject3$2 || (_templateObject3$2 = _taggedTemplateLiteral(["\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    top: 0px;\n    left: 0px;\n"])));
+    var BorderSvgContainer = styled.svg(_templateObject3$1 || (_templateObject3$1 = _taggedTemplateLiteral(["\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    top: 0px;\n    left: 0px;\n"])));
     var BorderBox = styled.div(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n    ", "\n"])), function () {
       return position;
     });
@@ -3589,7 +3589,7 @@
     //
     var startColor = '#5ddcff';
     var endColor = '#4e00c2';
-    var script$2 = {
+    var script$3 = {
       name: 'EBorderBox1',
       components: {
         BorderBox: BorderBox,
@@ -3646,10 +3646,10 @@
     };
 
     /* script */
-    const __vue_script__$2 = script$2;
+    const __vue_script__$3 = script$3;
 
     /* template */
-    var __vue_render__$2 = function () {
+    var __vue_render__$3 = function () {
       var _vm = this;
       var _h = _vm.$createElement;
       var _c = _vm._self._c || _h;
@@ -3742,6 +3742,213 @@
         1
       )
     };
+    var __vue_staticRenderFns__$3 = [];
+    __vue_render__$3._withStripped = true;
+
+      /* style */
+      const __vue_inject_styles__$3 = undefined;
+      /* scoped */
+      const __vue_scope_id__$3 = undefined;
+      /* module identifier */
+      const __vue_module_identifier__$3 = undefined;
+      /* functional template */
+      const __vue_is_functional_template__$3 = false;
+      /* style inject */
+      
+      /* style inject SSR */
+      
+      /* style inject shadow dom */
+      
+
+      
+      const __vue_component__$3 = /*#__PURE__*/normalizeComponent(
+        { render: __vue_render__$3, staticRenderFns: __vue_staticRenderFns__$3 },
+        __vue_inject_styles__$3,
+        __vue_script__$3,
+        __vue_scope_id__$3,
+        __vue_is_functional_template__$3,
+        __vue_module_identifier__$3,
+        false,
+        undefined,
+        undefined,
+        undefined
+      );
+
+    function EBorderBox1 (Vue) {
+      Vue.component(__vue_component__$3.name, __vue_component__$3);
+    }
+
+    var _templateObject$4;
+    var GlobalBox = styled.div(_templateObject$4 || (_templateObject$4 = _taggedTemplateLiteral(["\n    position: relative;\n    width: 100%;\n    height: 100%;\n"])));
+
+    var _templateObject$3;
+    var borderContainerProps = {
+      borderColor: {
+        type: String,
+        default: "#4cc7f3"
+      },
+      borderWidth: {
+        type: Number,
+        default: 2
+      },
+      lineWidth: {
+        type: Number,
+        default: 10
+      },
+      width: {
+        type: Number,
+        default: 200
+      },
+      height: {
+        type: Number,
+        default: 200
+      },
+      backgroundColor: {
+        type: String,
+        default: 'rgba(76, 199, 243, 0.15)'
+      }
+    };
+
+    /**
+     * @description 边框内容
+     * @summary 通过线性渐变实现，从上开始渐变n个px，然后变成透明n个px，再持续透明，直到最后带颜色的n个px，然后旋转90度，相同方法从左开始画，再定位到右下角，开始画另外2个遍
+     */
+    var BorderContainer = styled('div', borderContainerProps)(_templateObject$3 || (_templateObject$3 = _taggedTemplateLiteral(["\n    width: ", "px;\n    height: ", "px;\n    background-origin: content-box;\n    background-color: ", ";\n    background-image:\n        linear-gradient(", " ", "px, transparent ", "px, transparent calc(100% - ", "px), ", " ", "px),\n        linear-gradient(90deg, ", " ", "px, transparent ", "px, transparent calc(100% - ", "px), ", " ", "px),\n        linear-gradient(", " ", "px, transparent ", "px, transparent calc(100% - ", "px), ", " ", "px),\n        linear-gradient(90deg, ", " ", "px, transparent ", "px, transparent calc(100% - ", "px), ", " ", "px);\n    background-repeat: no-repeat;\n    background-position: top left, top left, bottom right, bottom right;\n    background-size: ", "px 100%, 100% ", "px;\n"])), function (props) {
+      return props.width;
+    }, function (props) {
+      return props.height;
+    }, function (props) {
+      return props.backgroundColor;
+    }, function (props) {
+      return props.borderColor;
+    }, function (props) {
+      return props.borderWidth;
+    }, function (props) {
+      return props.borderWidth;
+    }, function (props) {
+      return props.borderWidth;
+    }, function (props) {
+      return props.borderColor;
+    }, function (props) {
+      return props.borderWidth;
+    }, function (props) {
+      return props.borderColor;
+    }, function (props) {
+      return props.borderWidth;
+    }, function (props) {
+      return props.borderWidth;
+    }, function (props) {
+      return props.borderWidth;
+    }, function (props) {
+      return props.borderColor;
+    }, function (props) {
+      return props.borderWidth;
+    }, function (props) {
+      return props.borderColor;
+    }, function (props) {
+      return props.borderWidth;
+    }, function (props) {
+      return props.borderWidth;
+    }, function (props) {
+      return props.borderWidth;
+    }, function (props) {
+      return props.borderColor;
+    }, function (props) {
+      return props.borderWidth;
+    }, function (props) {
+      return props.borderColor;
+    }, function (props) {
+      return props.borderWidth;
+    }, function (props) {
+      return props.borderWidth;
+    }, function (props) {
+      return props.borderWidth;
+    }, function (props) {
+      return props.borderColor;
+    }, function (props) {
+      return props.borderWidth;
+    }, function (props) {
+      return props.lineWidth;
+    }, function (props) {
+      return props.lineWidth;
+    });
+
+    //
+    var script$2 = {
+      name: 'EBorderBox2',
+      components: {
+        GlobalBox: GlobalBox,
+        BorderContainer: BorderContainer
+      },
+      mixins: [autoResize],
+      props: {
+        /**
+        * @description 边框颜色
+        */
+        borderColor: {
+          type: String,
+          default: "#4cc7f3"
+        },
+        /**
+         * @description 边框宽度
+         */
+        borderWidth: {
+          type: Number,
+          default: 2
+        },
+        /**
+         * @description 边框线长度
+         */
+        lineWidth: {
+          type: Number,
+          default: 10
+        },
+        /**
+         * @description 背景色
+         */
+        backgroundColor: {
+          type: String,
+          default: 'rgba(76, 199, 243, 0.15)'
+        }
+      },
+      data: function data() {
+        return {
+          ref: 'e-border-box-2'
+        };
+      }
+    };
+
+    /* script */
+    const __vue_script__$2 = script$2;
+
+    /* template */
+    var __vue_render__$2 = function () {
+      var _vm = this;
+      var _h = _vm.$createElement;
+      var _c = _vm._self._c || _h;
+      return _c(
+        "global-box",
+        { ref: _vm.ref, class: _vm.ref },
+        [
+          _c(
+            "border-container",
+            {
+              attrs: {
+                height: _vm.height,
+                width: _vm.width,
+                "border-color": _vm.borderColor,
+                "border-width": _vm.borderWidth,
+                "line-width": _vm.lineWidth,
+                "background-color": _vm.backgroundColor,
+              },
+            },
+            [_vm._t("default")],
+            2
+          ),
+        ],
+        1
+      )
+    };
     var __vue_staticRenderFns__$2 = [];
     __vue_render__$2._withStripped = true;
 
@@ -3774,11 +3981,19 @@
         undefined
       );
 
-    function EBorderBox1 (Vue) {
+    /*
+     * @Autor: costa
+     * @Date: 2023-07-26 17:58:10
+     * @LastEditors: costa
+     * @LastEditTime: 2023-07-27 13:54:53
+     * @Description: 
+     * @Copyright: © 2023 by costa. All rights reserved.
+     */
+    function EBorderBox2 (Vue) {
       Vue.component(__vue_component__$2.name, __vue_component__$2);
     }
 
-    var _templateObject$2, _templateObject2$1, _templateObject3$1;
+    var _templateObject$2, _templateObject2$1;
     var boxContentProps = {
       fontSize: {
         type: Number
@@ -3798,15 +4013,14 @@
         type: Array
       }
     };
-    var BoxContainer = styled.div(_templateObject$2 || (_templateObject$2 = _taggedTemplateLiteral(["\n    position: relative;\n    width: 100%;\n    height: 100%;\n"])));
-    var BoxContent = styled('div', boxContentProps)(_templateObject2$1 || (_templateObject2$1 = _taggedTemplateLiteral(["\n    height: 100%;\n    width: 100%;\n    position: absolute;\n    top: 0px;\n    left: 0px;\n    background: ", ";\n    border-radius: 100%;\n    overflow: hidden;\n\n    .percent {\n        position: absolute;\n        left: 0;\n        top: 0;\n        z-index: 3;\n        width: 100%;\n        height: 100%;\n        display: flex;\n        display: -webkit-flex;\n        align-items: center;\n        justify-content: center;\n        color: ", ";\n        font-size: ", "px;\n    }\n"])), function (props) {
+    var BoxContent = styled('div', boxContentProps)(_templateObject$2 || (_templateObject$2 = _taggedTemplateLiteral(["\n    height: 100%;\n    width: 100%;\n    position: absolute;\n    top: 0px;\n    left: 0px;\n    background: ", ";\n    border-radius: 100%;\n    overflow: hidden;\n\n    .percent {\n        position: absolute;\n        left: 0;\n        top: 0;\n        z-index: 3;\n        width: 100%;\n        height: 100%;\n        display: flex;\n        display: -webkit-flex;\n        align-items: center;\n        justify-content: center;\n        color: ", ";\n        font-size: ", "px;\n    }\n"])), function (props) {
       return props.backgroundColor;
     }, function (props) {
       return props.fontColor;
     }, function (props) {
       return props.fontSize;
     });
-    var WaterWave = styled('div', waterWaveProps)(_templateObject3$1 || (_templateObject3$1 = _taggedTemplateLiteral(["\n    position: absolute;\n    left: 0;\n    top: 0;\n    z-index: 2;\n    width: 100%;\n    height: 100%;\n    transform: translate(0, ", "%);\n    background: ", ";\n    transition: all .3s;\n\n.water_wave {\n    width: 200%;\n    position: absolute;\n    bottom: 100%;\n}\n\n.water_wave_back {\n    right: 0;\n    fill: ", ";\n    -webkit-animation: wave-back 2s infinite linear;\n    animation: wave-back 2s infinite linear;\n}\n\n.water_wave_front {\n    left: 0;\n    fill: ", ";\n    margin-bottom: -1px;\n    -webkit-animation: wave-front 1s infinite linear;\n    animation: wave-front 1s infinite linear;\n}\n\n@keyframes wave-front {\n    100% {\n      -webkit-transform: translate(-50%, 0);\n      transform: translate(-50%, 0);\n    }\n}\n\n@keyframes wave-back {\n    100% {\n      -webkit-transform: translate(50%, 0);\n      transform: translate(50%, 0);\n    }\n}\n"])), function (props) {
+    var WaterWave = styled('div', waterWaveProps)(_templateObject2$1 || (_templateObject2$1 = _taggedTemplateLiteral(["\n    position: absolute;\n    left: 0;\n    top: 0;\n    z-index: 2;\n    width: 100%;\n    height: 100%;\n    transform: translate(0, ", "%);\n    background: ", ";\n    transition: all .3s;\n\n.water_wave {\n    width: 200%;\n    position: absolute;\n    bottom: 100%;\n}\n\n.water_wave_back {\n    right: 0;\n    fill: ", ";\n    -webkit-animation: wave-back 2s infinite linear;\n    animation: wave-back 2s infinite linear;\n}\n\n.water_wave_front {\n    left: 0;\n    fill: ", ";\n    margin-bottom: -1px;\n    -webkit-animation: wave-front 1s infinite linear;\n    animation: wave-front 1s infinite linear;\n}\n\n@keyframes wave-front {\n    100% {\n      -webkit-transform: translate(-50%, 0);\n      transform: translate(-50%, 0);\n    }\n}\n\n@keyframes wave-back {\n    100% {\n      -webkit-transform: translate(50%, 0);\n      transform: translate(50%, 0);\n    }\n}\n"])), function (props) {
       return 100 - props.value;
     }, function (props) {
       return props.waveColors[0];
@@ -3820,7 +4034,7 @@
     var script$1 = {
       name: 'EWaterLevelPond',
       components: {
-        BoxContainer: BoxContainer,
+        GlobalBox: GlobalBox,
         WaterWave: WaterWave,
         BoxContent: BoxContent
       },
@@ -3930,7 +4144,7 @@
       var _h = _vm.$createElement;
       var _c = _vm._self._c || _h;
       return _c(
-        "box-container",
+        "global-box",
         { staticClass: "water-level-pond" },
         [
           _c(
@@ -4443,6 +4657,7 @@
       Vue.use(EDigitalFlop);
       Vue.use(EFullScreenContainer);
       Vue.use(EBorderBox1);
+      Vue.use(EBorderBox2);
       Vue.use(EWaterLevelPond);
       Vue.use(ETab);
     }
