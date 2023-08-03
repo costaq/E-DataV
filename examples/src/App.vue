@@ -1,3 +1,11 @@
+<!--
+ * @Autor: costa
+ * @Date: 2023-04-04 11:04:29
+ * @LastEditors: costa
+ * @LastEditTime: 2023-08-03 15:56:33
+ * @Description: 
+ * @Copyright: © 2023 by costa. All rights reserved.
+-->
 <template>
   <div id="app">
     <e-full-screen-container>
@@ -8,8 +16,8 @@
           <div style="width:600px;height:100px;">
             <e-tab :value="'2'" :items="items" :columns="3" @change="handleChange"></e-tab>
           </div>
-          <e-border-box-2 style="width:300px;height:300px;">
-          </e-border-box-2>
+          <!-- <e-border-box-2 style="width:300px;height:300px;">
+          </e-border-box-2> -->
         </e-border-box-1>
 
         <div style="margin-top:20px;">
@@ -24,13 +32,21 @@
 </template>
 
 <script>
+
 export default {
   name: 'App',
   data() {
     return {
       txtValue: 0,
       value: 0,
-      items: [{ label: 'test1', value: '1' }, { label: 'test2', value: '2' }, { label: 'test3', value: '3' }],
+      items: [
+        {
+          label: 'test1', value: '1'
+        },
+        {
+          label: 'test2', value: '2'
+        }
+      ],
     }
   },
   methods: {

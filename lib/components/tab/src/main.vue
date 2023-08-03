@@ -2,41 +2,44 @@
  * @Autor: costa
  * @Date: 2023-07-18 15:00:35
  * @LastEditors: costa
- * @LastEditTime: 2023-07-18 17:34:34
+ * @LastEditTime: 2023-08-03 15:31:32
  * @Description: Tab组件
  * @Copyright: © 2023 by costa. All rights reserved.
 -->
 <template>
     <tab-container :class="ref">
-        <tab-content :ref="ref">
+        <tab-content :ref="ref" :symbolId="symbolId" :length="itemSize.width + itemSize.height">
             <tab-item v-for="item in items" :class="selectedValue === item.value ? 'active' : ''" :key="item.value"
                 :margin="margin" :width="itemSize.width" :height="itemSize.height" :duration="duration"
-                :font-color="fontColor" :font-size="fontSize" :background-color="backgroundColor"
+                :font-color="fontColor" :font-size="fontSize" :background-color="backgroundColor" :symbolId="symbolId"
                 @click="($event) => handleClick($event, item.value)" version="1.1" xmlns="http://www.w3.org/2000/svg"
                 x="0px" y="0px">
-                <defs>
-                    <!-- 模糊 -->
-                    <filter :id="`svg-blur-${symbolId}`" x="0" y="0" :width="itemSize.width"
-                        :height="itemSize.height">
-                        <feOffset result="offOut" in="SourceGraphic" dx="2" dy="2" />
-                        <feGaussianBlur in="offOut" result="blurout" stdDeviation="5" />
-                        <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
-                    </filter>
-                    <!-- 渐变颜色 -->
-                    <linearGradient :id="`svg-gradient-${symbolId}`" gradientUnits="userSpaceOnUse" x1="0%" y1="100%"
-                        x2="100%" y2="0%">
-                        <stop v-for="(color, i) in borderColors" :key="i"
-                            :offset="`${i / (borderColors.length - 1) * 100}%`" :stop-color="color" />
-                    </linearGradient>
-                </defs>
-                <rect :filter="`url(#svg-blur-${symbolId})`" :stroke="`url(#svg-gradient-${symbolId})`" rx="10"></rect>
-                <text :x="itemSize.width / 2" :y="itemSize.height / 2">{{ item.label }}</text>
+                <item-border>
+                    <defs>
+                        <!-- 模糊 -->
+                        <filter :id="`svg-blur-${symbolId}`" x="0" y="0" :width="itemSize.width" :height="itemSize.height">
+                            <feOffset result="offOut" in="SourceGraphic" dx="2" dy="2" />
+                            <feGaussianBlur in="offOut" result="blurout" stdDeviation="5" />
+                            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                        </filter>
+                        <!-- 渐变颜色 -->
+                        <linearGradient :id="`svg-gradient-${symbolId}`" gradientUnits="userSpaceOnUse" x1="0%" y1="100%"
+                            x2="100%" y2="0%">
+                            <stop v-for="(color, i) in borderColors" :key="i"
+                                :offset="`${i / (borderColors.length - 1) * 100}%`" :stop-color="color" />
+                        </linearGradient>
+                    </defs>
+                    <rect :filter="`url(#svg-blur-${symbolId})`" :stroke="`url(#svg-gradient-${symbolId})`" rx="10"></rect>
+                </item-border>
+                <item-content>
+                    <item-text>{{ item.label }}</item-text>
+                </item-content>
             </tab-item>
         </tab-content>
     </tab-container>
 </template>
 <script>
-import { TabContainer, TabContent, TabItem } from './tab';
+import { TabContainer, TabContent, TabItem, ItemBorder, ItemContent, ItemIcon, ItemText } from './tab';
 import { genNonDuplicateID } from '../../../utils/common';
 import autoResize from '../../../mixin/autoResize';
 
@@ -45,7 +48,11 @@ export default {
     components: {
         TabContainer,
         TabContent,
-        TabItem
+        TabItem,
+        ItemBorder,
+        ItemContent,
+        ItemIcon,
+        ItemText
     },
     mixins: [autoResize],
     props: {

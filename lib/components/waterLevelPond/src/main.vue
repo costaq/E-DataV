@@ -22,7 +22,7 @@
                 <div class="value">{{ displayVal }}</div>
                 <div class="suffix">%</div>
             </div>
-            <water-wave :value="displayVal" :waveColors="waveColors">
+            <water-wave :symbolId="symbolId" :value="displayVal" :waveColors="waveColors">
                 <svg viewBox="0 0 560 20" class="water_wave water_wave_back">
                     <use :href="`#${uniqueId}`"></use>
                 </svg>
