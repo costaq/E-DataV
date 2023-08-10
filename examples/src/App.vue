@@ -2,28 +2,30 @@
  * @Autor: costa
  * @Date: 2023-04-04 11:04:29
  * @LastEditors: costa
- * @LastEditTime: 2023-08-07 16:29:28
+ * @LastEditTime: 2023-08-10 14:00:23
  * @Description: 
  * @Copyright: © 2023 by costa. All rights reserved.
 -->
 <template>
   <div id="app">
     <e-full-screen-container>
-      <div style="width: 700px;height:800px;">
+      <div style="width: 700px;height:500px;">
         <e-border-box-1>
           <e-digital-flop :value="value" :decimals="0" color="#fff"></e-digital-flop>
           <e-water-level-pond style="width:300px;height:300px;" :value="value" :background-color="'#000'" />
           <div style="width:600px;height:100px;">
-            <e-tab :columns="3">
-              <e-tab-item value="1"><template slot="icon"><a-icon type="down-square" /></template>1</e-tab-item>
-              <e-tab-item value="2">2</e-tab-item>
-              <e-tab-item value="3">3</e-tab-item>
-            </e-tab>
-          </div>
-          <!-- <e-border-box-2 style="width:300px;height:300px;">
-          </e-border-box-2> -->
-        </e-border-box-1>
 
+          </div>
+
+        </e-border-box-1>
+        <e-border-box-2 style="width:300px;height:300px;">
+          
+        </e-border-box-2>
+        <e-tab :columns="3" style="width:300px;height:300px;">
+            <e-tab-item value="1"><template slot="icon"><a-icon type="down-square" /></template>1</e-tab-item>
+            <e-tab-item value="2">2</e-tab-item>
+            <e-tab-item value="3">3</e-tab-item>
+          </e-tab>
         <div style="margin-top:20px;">
           <input type="number" v-model="txtValue" /> <input type="button" value="更新数据" @click="handleUpdate" />
         </div>
@@ -65,7 +67,7 @@ export default {
 </script>
 
 <style>
-#app {
+body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -2,7 +2,7 @@
  * @Autor: costa
  * @Date: 2023-03-24 10:08:12
  * @LastEditors: costa
- * @LastEditTime: 2023-08-07 16:26:00
+ * @LastEditTime: 2023-08-10 13:50:53
  * @Description: umd 测试页面
  * @Copyright: © 2023 by costa. All rights reserved.
 -->
@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <style>
-        body{
+        body {
             background-color: #000;
         }
     </style>
@@ -32,16 +32,18 @@
                 <e-water-level-pond :value="78" />
             </div> -->
             <div style="width:500px;height:100px;">
-                <e-tab :columns="3">
-                    <e-tab-item value="1">22</e-tab-item>
-                    <e-tab-item value="2">2</e-tab-item>
-                    <e-tab-item value="3">3</e-tab-item>
-                </e-tab>
+
             </div>
-            <!-- <div>
-                <e-border-box-2 style="width:200px;height:200px;"></e-border-box-2>
-            </div> -->
-            
+            <div>
+                <e-border-box-2 style="width:200px;height:200px;">
+                    <e-tab :columns="3">
+                        <e-tab-item value="1">22</e-tab-item>
+                        <e-tab-item value="2">2</e-tab-item>
+                        <e-tab-item value="3">3</e-tab-item>
+                    </e-tab>
+                </e-border-box-2>
+            </div>
+
         </e-full-screen-container>
     </div>
 </body>

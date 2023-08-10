@@ -2,10 +2,16 @@
  * @Autor: costa
  * @Date: 2023-08-03 13:35:33
  * @LastEditors: costa
- * @LastEditTime: 2023-08-07 15:35:46
+ * @LastEditTime: 2023-08-10 13:55:17
  * @Description: 
  * @Copyright: © 2023 by costa. All rights reserved.
 -->
+# 0.5.3 (2023-08-10)
+
+### Bug Fixes
+
+* **e-border-box-2:** 修复了使用后，内部的组件无法正常获取宽高bug
+
 # 0.5.2 (2023-08-07)
 
 ### Bug Fixed

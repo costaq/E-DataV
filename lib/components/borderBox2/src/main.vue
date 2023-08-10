@@ -2,13 +2,13 @@
  * @Autor: costa
  * @Date: 2023-07-26 17:58:20
  * @LastEditors: costa
- * @LastEditTime: 2023-07-27 11:04:13
+ * @LastEditTime: 2023-08-10 13:52:50
  * @Description: 边框组件2
  * @Copyright: © 2023 by costa. All rights reserved.
 -->
 <template>
     <global-box :class="ref" :ref="ref">
-        <border-container :height="height" :width="width" :border-color="borderColor" :border-width="borderWidth"
+        <border-container :border-color="borderColor" :border-width="borderWidth"
             :line-width="lineWidth" :background-color="backgroundColor">
             <slot></slot>
         </border-container>
