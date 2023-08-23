@@ -1,6 +1,6 @@
 {
   "name": "e-datav",
-  "version": "0.5.3",
+  "version": "0.6.0",
   "description": "vue2 大屏组件",
   "author": "costaxu",
   "main": "lib/index.js",

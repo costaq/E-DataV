@@ -2,7 +2,7 @@
  * @Autor: costa
  * @Date: 2023-04-04 11:04:29
  * @LastEditors: costa
- * @LastEditTime: 2023-08-10 14:00:23
+ * @LastEditTime: 2023-08-22 17:48:57
  * @Description: 
  * @Copyright: © 2023 by costa. All rights reserved.
 -->
@@ -19,7 +19,10 @@
 
         </e-border-box-1>
         <e-border-box-2 style="width:300px;height:300px;">
-          
+          <e-scroll-ranking-board type="page" :items="rankingList" ></e-scroll-ranking-board>
+        </e-border-box-2>
+        <e-border-box-2 style="width:300px;height:300px;">
+          <e-scroll-ranking-board type="page" :items="rankingList" ></e-scroll-ranking-board>
         </e-border-box-2>
         <e-tab :columns="3" style="width:300px;height:300px;">
             <e-tab-item value="1"><template slot="icon"><a-icon type="down-square" /></template>1</e-tab-item>
@@ -53,6 +56,11 @@ export default {
           label: 'test2', value: '2'
         }
       ],
+      rankingList: Array.from({ length: 100 }).map((item, index) => {
+        return {
+          label: `test${index}`, value: index
+        }
+      })
     }
   },
   methods: {

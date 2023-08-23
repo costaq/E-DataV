@@ -2,7 +2,7 @@
  * @Autor: costa
  * @Date: 2023-07-07 11:28:01
  * @LastEditors: costa
- * @LastEditTime: 2023-07-07 14:55:12
+ * @LastEditTime: 2023-08-22 16:43:57
  * @Description: 边框组件公共属性
  * @Copyright: © 2023 by costa. All rights reserved.
  */
