@@ -2,10 +2,16 @@
  * @Autor: costa
  * @Date: 2023-08-03 13:35:33
  * @LastEditors: costa
- * @LastEditTime: 2023-08-22 16:48:36
+ * @LastEditTime: 2023-09-11 15:18:47
  * @Description: 
  * @Copyright: © 2023 by costa. All rights reserved.
 -->
+# 0.7.0 (2023-09-11)
+
+### Features
+
+* **e-dynamic-text:** 新增了动态文字组件
+
 # 0.6.0 (2023-08-22)
 
 ### Features

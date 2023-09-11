@@ -14,6 +14,7 @@ import EWaterLevelPond from './components/waterLevelPond';
 import ETab from './components/tab';
 import ETabItem from './components/tabItem';
 import EScrollRankingBoard from './components/scrollRankingBoard';
+import DynamicText from './components/dynamicText';
 import * as GlobalStyle from './components/styled/GlobalStyle';
 
 export default function (Vue) {
@@ -25,4 +26,5 @@ export default function (Vue) {
     Vue.use(ETab);
     Vue.use(ETabItem);
     Vue.use(EScrollRankingBoard);
+    Vue.use(DynamicText);
 }
