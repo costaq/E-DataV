@@ -1,4 +1,11 @@
-import { PropType } from "vue";
+/*
+ * @Autor: costa
+ * @Date: 2023-09-07 09:58:49
+ * @LastEditors: costa
+ * @LastEditTime: 2023-09-14 15:25:45
+ * @Description: 
+ * @Copyright: © 2023 by costa. All rights reserved.
+ */
 import styled from "vue-styled-components";
 
 const textProps = {

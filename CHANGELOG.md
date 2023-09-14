@@ -2,10 +2,16 @@
  * @Autor: costa
  * @Date: 2023-08-03 13:35:33
  * @LastEditors: costa
- * @LastEditTime: 2023-09-11 15:18:47
+ * @LastEditTime: 2023-09-14 15:53:14
  * @Description: 
  * @Copyright: © 2023 by costa. All rights reserved.
 -->
+# 0.7.1 (2023-09-14)
+
+### Bug Fixes
+
+* **e-dynamic-text:** 解决在vite中报错的问题
+
 # 0.7.0 (2023-09-11)
 
 ### Features
