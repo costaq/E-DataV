@@ -2,10 +2,20 @@
  * @Autor: costa
  * @Date: 2023-08-03 13:35:33
  * @LastEditors: costa
- * @LastEditTime: 2023-09-14 15:53:14
+ * @LastEditTime: 2023-09-14 17:13:29
  * @Description: 
  * @Copyright: © 2023 by costa. All rights reserved.
 -->
+# 0.7.2 (2023-09-15)
+
+### Bug Fixes
+
+* **e-scroll-ranking-board:** 解决行点击事件无效问题
+
+#### Optimization
+
+增加声明文件，优化在vue2 + ts中的使用
+
 # 0.7.1 (2023-09-14)
 
 ### Bug Fixes

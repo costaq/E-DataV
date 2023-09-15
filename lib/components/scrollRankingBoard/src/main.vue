@@ -2,14 +2,14 @@
  * @Autor: costa
  * @Date: 2023-08-22 14:39:11
  * @LastEditors: costa
- * @LastEditTime: 2023-08-22 16:47:52
+ * @LastEditTime: 2023-09-14 17:24:37
  * @Description: 
  * @Copyright: © 2023 by costa. All rights reserved.
 -->
 <template>
     <board-container :ref="ref" :class="ref">
-        <board-item v-for="item in domData" :key="item.label + item.ranking + item.scroll" :height="item.height"
-            :color="color">
+        <board-item v-for="(item, index) in domData" :key="item.label + item.ranking + item.scroll" :height="item.height"
+            :color="color" @click="() => handleRowClick(item, index)">
             <board-item-icon :font-size="rankingFontSize" :color="getHighlightColor(item)">No.{{ item.ranking }}</board-item-icon>
             <board-item-label :font-size="labelFontSize">{{ item.label }}</board-item-label>
             <board-item-value :font-size="valueFontSize">{{ item.value }}</board-item-value>
