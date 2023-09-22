@@ -34,7 +34,7 @@
     </global-box>
 </template>
 <script>
-import { WaterWave, BoxContent } from './boxContainer';
+import { WaterWave, BoxContent } from './pond.style';
 import { GlobalBox } from '../../styled/GlobalBox';
 import { genNonDuplicateID } from '../../../utils/common';
 import { animation } from '../../../utils/animation';

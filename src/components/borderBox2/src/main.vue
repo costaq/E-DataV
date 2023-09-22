@@ -2,27 +2,23 @@
  * @Autor: costa
  * @Date: 2023-07-26 17:58:20
  * @LastEditors: costa
- * @LastEditTime: 2023-08-10 13:52:50
+ * @LastEditTime: 2023-09-21 16:12:25
  * @Description: 边框组件2
  * @Copyright: © 2023 by costa. All rights reserved.
 -->
 <template>
-    <global-box :class="ref" :ref="ref">
-        <border-container :border-color="borderColor" :border-width="borderWidth"
-            :line-width="lineWidth" :background-color="backgroundColor">
-            <slot></slot>
-        </border-container>
-    </global-box>
+    <border-container :class="ref" :ref="ref" :border-color="borderColor" :border-width="borderWidth"
+        :line-width="lineWidth" :background-color="backgroundColor">
+        <slot></slot>
+    </border-container>
 </template>
 <script>
 import autoResize from '../../../mixin/autoResize';
-import { GlobalBox } from '../../styled/GlobalBox';
-import { BorderContainer } from './borderContainer';
+import { BorderContainer } from './border.style';
 
 export default {
     name: 'EBorderBox2',
     components: {
-        GlobalBox,
         BorderContainer
     },
     mixins: [autoResize],

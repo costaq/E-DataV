@@ -1,10 +1,18 @@
+<!--
+ * @Autor: costa
+ * @Date: 2023-09-07 09:56:56
+ * @LastEditors: costa
+ * @LastEditTime: 2023-09-21 15:50:44
+ * @Description: 
+ * @Copyright: © 2023 by costa. All rights reserved.
+-->
 <template>
     <text-container :colors="colors">
         <e-text v-for="(txt, index) in spans" :key="`${spans.length}${index}`" :spacing="spacing" :duration="spans.length * speed" :delay="index * speed" >{{ txt }}</e-text>
     </text-container>
 </template>
 <script>
-import { TextContainer, Text } from './textContainer';
+import { TextContainer, Text } from './text.style';
 
 export default {
     name: 'EDynamicText',

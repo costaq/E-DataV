@@ -2,7 +2,7 @@
  * @Autor: costa
  * @Date: 2023-08-04 16:04:38
  * @LastEditors: costa
- * @LastEditTime: 2023-08-07 16:25:38
+ * @LastEditTime: 2023-09-21 15:51:23
  * @Description: 
  * @Copyright: © 2023 by costa. All rights reserved.
 -->
@@ -41,7 +41,7 @@
     </tab-item>
 </template>
 <script>
-import { TabItem, ItemBorder, ItemContent, ItemText, ItemIcon } from './item';
+import { TabItem, ItemBorder, ItemContent, ItemText, ItemIcon } from './item.style';
 import Emitter from '../../../mixin/emitter';
 
 export default {

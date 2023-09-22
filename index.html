@@ -2,7 +2,7 @@
  * @Autor: costa
  * @Date: 2023-03-24 10:08:12
  * @LastEditors: costa
- * @LastEditTime: 2023-09-07 13:23:27
+ * @LastEditTime: 2023-09-22 10:58:40
  * @Description: umd 测试页面
  * @Copyright: © 2023 by costa. All rights reserved.
 -->
@@ -26,26 +26,33 @@
             <div style="width:500px;height:200px;">
                 <e-dynamic-text text="E-DataV数据大屏" style="font-size: 36px;font-weight: bold;" />
             </div>
-            <!-- <div style="width:200px;height:200px;margin-left:200px;">
+            <div style="width: 500px;height:300px;">
+                <e-border-box-3 text="数据大屏" border-color="#1e80ff" background-color="transparent" text-position="right" font-color="#fff">
+                    dasdsdas
+                </e-border-box-3>
+            </div>
+            
+            
+            <div style="width:200px;height:200px;margin-left:200px;">
                 <e-border-box-1 style="padding: 10px;">
                     <e-digital-flop :value="9999" separator="," color="#c75151"></e-digital-flop>
                 </e-border-box-1>
             </div>
             <div style="width:300px;height:300px;">
                 <e-water-level-pond :value="78" />
-            </div> -->
+            </div>
             <div style="width:500px;height:100px;">
 
             </div>
-            <!-- <div>
-                <e-border-box-2 style="width:200px;height:200px;">
+            <div style="width:400px;height:200px;">
+                <e-border-box-2>
                     <e-tab :columns="3">
                         <e-tab-item value="1">22</e-tab-item>
                         <e-tab-item value="2">2</e-tab-item>
                         <e-tab-item value="3">3</e-tab-item>
                     </e-tab>
                 </e-border-box-2>
-            </div> -->
+            </div>
             <e-scroll-ranking-board style="width:200px;height:300px;" :items="[{label: '222', value: 222}, {label: '111222', value: 122}, {label: '222', value: 22}, {label: '22332', value: 212}, {label: '2212', value: 242}, {label: '2242', value: 122}]"></e-scroll-ranking-board>
         </e-full-screen-container>
     </div>

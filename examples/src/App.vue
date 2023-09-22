@@ -2,7 +2,7 @@
  * @Autor: costa
  * @Date: 2023-04-04 11:04:29
  * @LastEditors: costa
- * @LastEditTime: 2023-09-14 17:10:51
+ * @LastEditTime: 2023-09-22 10:56:58
  * @Description: 
  * @Copyright: © 2023 by costa. All rights reserved.
 -->
@@ -18,6 +18,7 @@
           <e-digital-flop :value="value" :decimals="0" color="#fff"></e-digital-flop>
           <e-water-level-pond style="width:300px;height:300px;" :value="value" :background-color="'#000'" />
         </e-border-box-1> -->
+        <e-border-box-3 style="width:300px;height:200px;" text="数据大屏" border-color="#1e80ff" background-color="transparent" text-position="right" font-color="#fff"></e-border-box-3>
         <e-border-box-2 style="width:300px;height:300px;">
           <e-scroll-ranking-board type="page" :items="rankingList" @row-click="handleChange"></e-scroll-ranking-board>
         </e-border-box-2>

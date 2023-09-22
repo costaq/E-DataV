@@ -2,7 +2,7 @@
  * @Autor: costa
  * @Date: 2023-08-22 14:39:11
  * @LastEditors: costa
- * @LastEditTime: 2023-09-14 17:24:37
+ * @LastEditTime: 2023-09-21 15:50:10
  * @Description: 
  * @Copyright: © 2023 by costa. All rights reserved.
 -->
@@ -18,7 +18,7 @@
     </board-container>
 </template>
 <script>
-import { BoardItem, BoardContainer, BoardItemIcon, BoardItemLabel, BoardItemValue, BoardItemShadow } from './board';
+import { BoardItem, BoardContainer, BoardItemIcon, BoardItemLabel, BoardItemValue, BoardItemShadow } from './board.style';
 import autoResize from '../../../mixin/autoResize';
 
 export default {

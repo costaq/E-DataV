@@ -2,7 +2,7 @@
  * @Autor: costa
  * @Date: 2023-07-18 15:00:35
  * @LastEditors: costa
- * @LastEditTime: 2023-08-07 14:25:13
+ * @LastEditTime: 2023-09-21 15:51:06
  * @Description: Tab组件
  * @Copyright: © 2023 by costa. All rights reserved.
 -->
@@ -12,7 +12,7 @@
     </tab-container>
 </template>
 <script>
-import { TabContainer } from './tab';
+import { TabContainer } from './tab.style';
 import { genNonDuplicateID } from '../../../utils/common';
 import autoResize from '../../../mixin/autoResize';
 
