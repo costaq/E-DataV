@@ -6,6 +6,12 @@
  * @Description: 
  * @Copyright: © 2023 by costa. All rights reserved.
 -->
+# 0.9.0 (2023-11-09)
+
+### Features
+
+* **e-loading:** 新增了Loading加载组件
+
 # 0.8.0 (2023-09-22)
 
 ### Features

@@ -2,7 +2,7 @@
  * @Autor: costa
  * @Date: 2023-03-24 10:08:12
  * @LastEditors: costa
- * @LastEditTime: 2023-09-22 10:58:40
+ * @LastEditTime: 2023-11-03 14:08:24
  * @Description: umd 测试页面
  * @Copyright: © 2023 by costa. All rights reserved.
 -->
@@ -22,7 +22,15 @@
 
 <body>
     <div id="app">
-        <e-full-screen-container>
+        <!-- <div style="height:500px;">
+            <e-loading>
+                加载中
+            </e-loading>
+        </div> -->
+        <e-loading border-color="#f53f3f" :size="80" style="position:absolute;font-size:12px;color:#ff9797;">
+            加载
+        </e-loading>
+        <!-- <e-full-screen-container>
             <div style="width:500px;height:200px;">
                 <e-dynamic-text text="E-DataV数据大屏" style="font-size: 36px;font-weight: bold;" />
             </div>
@@ -54,7 +62,7 @@
                 </e-border-box-2>
             </div>
             <e-scroll-ranking-board style="width:200px;height:300px;" :items="[{label: '222', value: 222}, {label: '111222', value: 122}, {label: '222', value: 22}, {label: '22332', value: 212}, {label: '2212', value: 242}, {label: '2242', value: 122}]"></e-scroll-ranking-board>
-        </e-full-screen-container>
+        </e-full-screen-container> -->
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

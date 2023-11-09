@@ -1,7 +1,7 @@
 import Vue from "vue";
 import { EDataVComponent } from "./component";
 
-export export type ScrollRankingBoardItem = {
+export type ScrollRankingBoardItem = {
     label: string;
     value: number;
     [key: string]: any;
