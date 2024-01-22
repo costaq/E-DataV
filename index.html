@@ -2,7 +2,7 @@
  * @Autor: costa
  * @Date: 2023-03-24 10:08:12
  * @LastEditors: costa
- * @LastEditTime: 2023-11-03 14:08:24
+ * @LastEditTime: 2024-01-22 15:08:54
  * @Description: umd 测试页面
  * @Copyright: © 2023 by costa. All rights reserved.
 -->
@@ -27,9 +27,12 @@
                 加载中
             </e-loading>
         </div> -->
-        <e-loading border-color="#f53f3f" :size="80" style="position:absolute;font-size:12px;color:#ff9797;">
+        <div style="width: 300px; height: 300px;">
+            <e-gauge-chart :value="55"></e-gauge-chart>
+          </div>
+        <!-- <e-loading border-color="#f53f3f" :size="80" style="position:absolute;font-size:12px;color:#ff9797;">
             加载
-        </e-loading>
+        </e-loading> -->
         <!-- <e-full-screen-container>
             <div style="width:500px;height:200px;">
                 <e-dynamic-text text="E-DataV数据大屏" style="font-size: 36px;font-weight: bold;" />

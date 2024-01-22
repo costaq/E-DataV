@@ -2,7 +2,7 @@
  * @Autor: costa
  * @Date: 2023-09-14 16:31:21
  * @LastEditors: costa
- * @LastEditTime: 2023-09-21 17:28:35
+ * @LastEditTime: 2024-01-22 14:55:15
  * @Description: 
  * @Copyright: © 2023 by costa. All rights reserved.
  */
@@ -15,3 +15,4 @@ export { ETab } from './tab'
 export { ETabItem } from './tab-item'
 export { EWaterLevelPond } from './water-level-pond'
 export { ELoading } from './loading'
+export { EGaughChart } from './gauge-chart'

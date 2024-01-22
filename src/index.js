@@ -2,7 +2,7 @@
  * @Autor: costa
  * @Date: 2023-04-04 11:03:48
  * @LastEditors: costa
- * @LastEditTime: 2023-11-03 13:10:04
+ * @LastEditTime: 2024-01-22 15:17:50
  * @Description: 
  * @Copyright: © 2023 by costa. All rights reserved.
  */
@@ -17,6 +17,7 @@ import ETabItem from './components/tabItem';
 import EScrollRankingBoard from './components/scrollRankingBoard';
 import EDynamicText from './components/dynamicText';
 import ELoading from './components/loading';
+import EGaugeChart from './components/gaugeChart';
 import * as GlobalStyle from './components/styled/GlobalStyle';
 
 export default function (Vue) {
@@ -31,4 +32,5 @@ export default function (Vue) {
     Vue.use(EScrollRankingBoard);
     Vue.use(EDynamicText);
     Vue.use(ELoading);
+    Vue.use(EGaugeChart);
 }
